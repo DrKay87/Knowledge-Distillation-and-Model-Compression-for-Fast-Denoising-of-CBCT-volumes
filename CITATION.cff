@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated preprint."
+title: "Knowledge Distillation and Model Compression for Fast Deep Learning-based Denoising of Cone-beam Computed Tomography Volumes"
+type: software
+authors:
+  - family-names: "Naveed"
+    given-names: "Khuram"
+    orcid: "https://orcid.org/0000-0001-8286-6139"
+  - family-names: "Pauwels"
+    given-names: "Ruben"
+    orcid: "https://orcid.org/0000-0002-9462-7546"
+repository-code: "https://github.com/DrKay87/Knowledge-Distillation-and-Model-Compression-for-Fast-Denoising-of-CBCT-volumes"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Knowledge Distillation and Model Compression for Fast Deep Learning-based Denoising of Cone-beam Computed Tomography Volumes"
+  authors:
+    - family-names: "Naveed"
+      given-names: "Khuram"
+    - family-names: "Pauwels"
+      given-names: "Ruben"
+  year: 2026
+  notes: "Preprint; not peer reviewed"

@@ -1,0 +1,10 @@
+numpy
+pandas
+matplotlib
+scipy
+scikit-image
+torch
+torchvision
+tqdm
+jupyter
+bm3d
