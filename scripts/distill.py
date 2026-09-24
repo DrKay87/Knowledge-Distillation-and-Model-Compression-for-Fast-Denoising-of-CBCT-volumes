@@ -5,8 +5,8 @@ through training so early epochs emphasize the reference target and later
 epochs increasingly emphasize teacher supervision.
 
 Requires the exact model definitions used in the experiments:
-    HARUnet_model_v2_1.py
-    ResUNet_model.py
+    models/HarUnet_model.py
+    models/ResUnet_model.py
 """
 import argparse
 from pathlib import Path
@@ -17,16 +17,8 @@ from torch.utils.data import DataLoader
 from compression.data import load_data, CBCTDataset
 from compression.losses import DistillationLoss
 
-try:
-    from HARUnet_model_v2_1 import HARU_net
-    from ResUNet_model import ResUNet
-except ImportError as exc:
-    raise ImportError(
-        "Add the exact HARUnet_model_v2_1.py and ResUNet_model.py used in "
-        "the manuscript experiments before running this script."
-    ) from exc
-
-
+from models.HarUnet_model import HARU_net
+from models.ResUnet_model import ResUNet
 def parse_args():
     p = argparse.ArgumentParser()
     p.add_argument("--train-inputs", required=True)
